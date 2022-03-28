@@ -10,7 +10,10 @@ var5:       .byte 0
 .globl main
 .ent main
 
-main:       li		$t0, -32		# $t0 = -32
+main:       li		$t0, 'A'
+            li	    $t5, 'a'
+            sub		$t0, $t0, $t5		# $t0 = $t0 - $t5
+            
 
             la		$s1, var1		# 
             lb		$t1, 0($s1)		# 
