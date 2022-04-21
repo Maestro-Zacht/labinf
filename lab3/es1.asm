@@ -32,7 +32,7 @@ loop:       li		$v0, 12		# $v0 = 12
             
             mflo    $t1
 
-            add		$t1, $t1, $t2		# $t1 = $t1 + $t2
+            addu		$t1, $t1, $t2		# $t1 = $t1 + $t2
             blt		$t1, $t2, notok	# if $t1 < $t2 then notok
             
             j		loop				# jump to loop
